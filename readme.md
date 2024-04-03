@@ -15,3 +15,6 @@ E-mail inválido:
 
 Campos obrigatórios:
 ![alt text](image-3.png)
+
+## Confira abaixo o gif do teste por completo:
+![alt text](testWalkdog.gif)

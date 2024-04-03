@@ -1,6 +1,7 @@
 *** Settings ***
 
-Resource            ${EXECDIR}/resources/base.resource
+Resource    resources/base.resource
+Resource    resources/pages/SignupPage.robot
 
 Test Setup           Start session
 Test Teardown        Finish session

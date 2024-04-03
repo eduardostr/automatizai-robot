@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.4 on win32)" generated="2024-03-27T12:26:59.521093" rpa="false" schemaversion="5">
+<suite id="s1" name="Walkdog" source="D:\QAx\projects\walkdog">
+<suite id="s1-s1" name="Home" source="D:\QAx\projects\walkdog\home.robot">
+<test id="s1-s1-t1" name="Webapp deve estar online" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-27T12:27:00.149499" level="INFO">Opening browser 'chrome' to base url 'https://walkdog.vercel.app/'.</msg>
+<arg>https://walkdog.vercel.app/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-27T12:27:00.148498" elapsed="4.904691"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-27T12:27:05.708470" level="INFO">Page title is 'Walkdog by Papito'.</msg>
+<arg>Walkdog by Papito</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-03-27T12:27:05.062530" elapsed="0.646956"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-27T12:27:05.882184" level="INFO">Current page contains text 'Cuidado e diversão em cada passo'.</msg>
+<arg>Cuidado e diversão em cada passo</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-27T12:27:05.732445" elapsed="0.150252"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-27T12:27:10.889260" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-27T12:27:05.887120" elapsed="5.002140"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-27T12:27:10.891260" elapsed="2.566417"/>
+</kw>
+<status status="PASS" start="2024-03-27T12:27:00.143497" elapsed="13.315191"/>
+</test>
+<doc>Suite de testes da página principal</doc>
+<status status="PASS" start="2024-03-27T12:26:59.689089" elapsed="13.773592"/>
+</suite>
+<status status="PASS" start="2024-03-27T12:26:59.536095" elapsed="13.933583"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Walkdog">Walkdog</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Home">Walkdog.Home</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
